@@ -15,7 +15,7 @@ frontend/node_modules/
 __pycache__/
 *.pyo
 *.pyd
-
+ 
 backend/.venv/
 .venv/
 
