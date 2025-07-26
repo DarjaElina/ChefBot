@@ -21,7 +21,9 @@ backend/.venv/
 
 *.log
 *.sqlite3
-*.db
+*.db 
+
+/
 
 .coverage
 .tox/
