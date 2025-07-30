@@ -35,13 +35,6 @@ export default {
 };
 </script>
 
-
-
-
-
-
-
-
 <!-- Comments
 v-model links input to the message variable
 button runs sendMessage function when clicked
