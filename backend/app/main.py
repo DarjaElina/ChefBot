@@ -1,13 +1,13 @@
-# app/main.py
-# This is the main entry point of the FastAPI backend.
-# It creates the app instance and includes all route files.
-# We run this file using `uvicorn` to start the server.
-
-
 from fastapi import FastAPI
+from app.api import routes
+from app.core.config import setupCors
 
 app = FastAPI()
 
-@app.get("/")
-async def root():
-    return {"message": "Hello from FastAPI backend!"}
+setupCors(app)  # Call setupCors function
+
+app.include_router(routes.router)  # Connect routes to routes file to main
+
+
+# Import fastapi: imports FastAPI framework to build the app
+# app = FastAPI(): creates the FastAPI app/web server
