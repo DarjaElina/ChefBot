@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 
+
 class Message(BaseModel):
     text: str
-
 
 
 # Import pydantic: to define data models and validate input

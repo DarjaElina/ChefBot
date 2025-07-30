@@ -11,6 +11,10 @@ router = APIRouter()
 class Message(BaseModel):
     text: str
 
+@router.get("/") # Root route
+def root():
+    return {"message": "Hello from FastAPI backend!"}
+
 @router.post("/sendMessage")
 def send_message(message: Message):
     return {"reply": "Ribbit Ribbit!"}
